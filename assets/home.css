@@ -120,6 +120,16 @@
 .quote-by strong{display:block;}
 .quote-by span{display:block;font-size:.88rem;color:var(--ink-soft);}
 
+/* ---------- Témoignages ---------- */
+.testimonials{margin-top:3.2rem;}
+.testimonials .tcard{background:var(--paper);border:1px solid var(--line-light);border-radius:var(--radius);padding:2rem;display:flex;flex-direction:column;gap:1rem;}
+.testimonials .quote-mark{font-size:2.8rem;opacity:1;height:1.6rem;}
+.testimonials blockquote{font-family:var(--serif);font-style:italic;font-size:1.08rem;line-height:1.45;margin:0;color:var(--ink);}
+.tby{display:flex;align-items:center;gap:.8rem;margin-top:auto;}
+.tavatar{width:46px;height:46px;border-radius:50%;background:var(--sapin);color:var(--or-light);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.92rem;letter-spacing:.03em;flex:none;}
+.tby strong{display:block;color:var(--ink);}
+.tby span{display:block;font-size:.86rem;color:var(--ink-soft);}
+
 /* ---------- Dual CTA ---------- */
 .dual-grid{gap:1.5rem;}
 .cta-card{padding:clamp(2rem,4vw,3rem);border-radius:var(--radius);}
