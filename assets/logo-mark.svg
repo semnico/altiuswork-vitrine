@@ -1,0 +1,15 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AltiusWork">
+  <defs>
+    <linearGradient id="alt-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7CE96"></stop>
+      <stop offset="0.55" stop-color="#C9A45C"></stop>
+      <stop offset="1" stop-color="#B0883A"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Dual Peak A — sommet droit (plein, plus haut) -->
+  <path d="M40 6 L57 58 L46 58 L31 23 Z" fill="url(#alt-gold)"></path>
+
+  <!-- sommet gauche (contour, plus bas) -->
+  <path d="M26 19 L11 58 L19 58 L32 30 Z" fill="none" stroke="url(#alt-gold)" stroke-width="3" stroke-linejoin="round"></path>
+</svg>
