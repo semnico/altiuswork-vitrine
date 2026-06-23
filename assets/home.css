@@ -85,7 +85,7 @@
   border-top:1px solid var(--line-light);
 }
 .steps li:last-child{border-bottom:1px solid var(--line-light);}
-.step-num{font-family:var(--serif);font-size:1.6rem;color:var(--or-deep);font-weight:600;line-height:1;padding-top:.2rem;}
+.steps .step-num{font-family:var(--serif);font-size:1.15rem;font-weight:600;line-height:1;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--sapin);color:var(--or-light);display:flex;align-items:center;justify-content:center;}
 .steps h3{font-size:1.35rem;margin-bottom:.3rem;}
 .steps p{color:var(--ink-soft);}
 @media (max-width:820px){.how{grid-template-columns:1fr;}}
