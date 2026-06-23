@@ -69,6 +69,7 @@
 /* ---------- Worlds ---------- */
 .worlds{margin-top:3.2rem;}
 .worlds .card{display:flex;flex-direction:column;background:var(--paper);}
+.worlds .card-lead{display:block;font-weight:600;color:var(--sapin);font-size:1.05rem;margin-bottom:.45rem;}
 .worlds .card p{color:var(--ink-soft);margin:.4rem 0 1.4rem;}
 .worlds .card h3{font-size:1.6rem;}
 .worlds .btn-ghost{margin-top:auto;align-self:flex-start;}
