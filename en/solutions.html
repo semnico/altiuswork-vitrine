@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solutions — AltiusWork</title>
+<meta name="description" content="AltiusSpot (local spaces), AltiusHub (offices & rooms by the day) and AltiusOffice (offices by the year), in premium venues. Explore the map of network places in French-speaking Switzerland and Haute-Savoie.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/altius.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="AltiusWork — home">
+      <img class="mark" src="../assets/logo-mark.png" alt="">
+      <span class="word">Altius<b>Work</b></span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html" class="active">Solutions</a></li>
+        <li><a href="partenaires.html">Become a partner</a></li>
+        <li class="nav-lang"><span class="lang-label">Language:</span><a href="../solutions.html">Français</a><a href="solutions.html" class="active" aria-current="true">English</a></li>
+      </ul>
+      <a class="btn btn-gold nav-mobile-cta" href="#carte">View the map</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="#carte">View the map</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero on-dark">
+  <div class="container">
+    <span class="eyebrow">Solutions · Professionals</span>
+    <h1>The right workspace,<br>wherever you need it.</h1>
+    <p class="page-hero-lead">A network of premium addresses in French-speaking Switzerland and Haute-Savoie. From a one-hour stop to a year-round base, book the space that fits your day, with the comfort of hospitality.</p>
+    <div class="page-hero-actions">
+      <a class="btn btn-gold btn-lg" href="#carte">Explore the map <span class="arrow">→</span></a>
+      <a class="btn btn-outline btn-lg" href="#types">See the formats</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TYPES ===================== -->
+<section class="section on-paper" id="types">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our solutions</span>
+      <h2>Three ways to work across the network</h2>
+      <p class="lead">One umbrella brand, AltiusWork, and three solutions for your use: a local spot, a space made private by the day, or an office by the year. All share the same promise: a refined setting, a reliable connection, and coffee within reach.</p>
+    </div>
+
+    <div class="types-list">
+      <article class="type-row reveal">
+        <div class="type-media ph has-photo"><img src="../assets/img/spot.jpg" alt="Local workspace in a café-bar"></div>
+        <div class="type-text">
+          <span class="type-pill">AltiusSpot</span>
+          <h3>Local spaces</h3>
+          <p>Partner cafés, bars and restaurants that open a work corner during the day. A lively atmosphere, near you or your clients, coffee in hand.</p>
+          <ul class="type-feats"><li>Shared spaces</li><li>By the hour / half-day</li><li>Wi-Fi &amp; coffee</li></ul>
+        </div>
+      </article>
+
+      <article class="type-row reveal">
+        <div class="type-media ph has-photo"><img src="../assets/img/hub.jpg" alt="Space made private by the day"></div>
+        <div class="type-text">
+          <span class="type-pill">AltiusHub</span>
+          <h3>Private by the day</h3>
+          <p>Private day-office, on-demand desk and meeting room, bookable by the day in quality venues. By the hour, by package or with no commitment, across the network.</p>
+          <ul class="type-feats"><li>Day-office &amp; rooms</li><li>By the day, private</li><li>Multi-site</li></ul>
+        </div>
+      </article>
+
+      <article class="type-row reveal">
+        <div class="type-media ph has-photo"><img src="../assets/img/office.jpg" alt="Private office rented by the year"></div>
+        <div class="type-text">
+          <span class="type-pill">AltiusOffice</span>
+          <h3>Office by the year</h3>
+          <p>A room turned into a real office, rented monthly or yearly: your permanent address in a quality venue, with an attractive membership and access to the whole network.</p>
+          <ul class="type-feats"><li>Dedicated address</li><li>Membership</li><li>Network access</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ALTIUSOFFICE PRIVATE HOMES (SOON) ===================== -->
+<section class="section on-dark">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Coming soon · AltiusOffice</span>
+      <h2>And soon, offices<br>in private homes</h2>
+      <p class="lead">AltiusOffice doesn't stop at hotels. Soon, individuals with a suitable space — an apartment, a house, an outbuilding — will be able to offer it to companies, with the AltiusWork setting and services. More offices closer to employees, and income from unused space.</p>
+      <a class="btn btn-gold btn-lg" href="partenaires.html">Keep me posted <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INTERACTIVE MAP ===================== -->
+<section class="section tight on-cream" id="carte">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The map of places</span>
+      <h2>Find a space around you</h2>
+      <p class="lead">The network's places, geolocated. Filter by solution (AltiusSpot, AltiusHub, AltiusOffice) and by city, then click a place to see the details.</p>
+    </div>
+
+    <div class="map-toolbar reveal">
+      <div class="type-chips" role="group" aria-label="Filter by type">
+        <button class="type-chip active" data-type="all">All</button>
+        <button class="type-chip" data-type="spot">AltiusSpot</button>
+        <button class="type-chip" data-type="hub">AltiusHub</button>
+        <button class="type-chip" data-type="office">AltiusOffice</button>
+      </div>
+      <label class="city-select">
+        <span>City</span>
+        <select id="cityFilter"><option value="all">All cities</option></select>
+      </label>
+    </div>
+
+    <div class="map-shell reveal">
+      <aside class="map-sidebar">
+        <div class="sidebar-head">
+          <span class="legend"><i class="dot hotel"></i> Hotel</span>
+          <span class="legend"><i class="dot spot"></i> AltiusSpot</span>
+          <span id="placeCount" class="place-count">12 places</span>
+        </div>
+        <div id="placeList" class="place-list"></div>
+      </aside>
+      <div class="map-area">
+        <div id="map"></div>
+        <div id="placeDetail" class="place-detail"></div>
+      </div>
+    </div>
+    <p class="map-note reveal">Demo data — sample fictional places shown for illustration. The real network is rolling out.</p>
+  </div>
+</section>
+
+<!-- ===================== BENEFITS ===================== -->
+<section class="section on-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why AltiusWork</span>
+      <h2>The comfort of hospitality,<br>the freedom of flex-office</h2>
+    </div>
+    <div class="grid cols-3 benefits">
+      <div class="benefit reveal">
+        <span class="benefit-num">01</span>
+        <h3>Total flexibility</h3>
+        <p>From the hour to the year, with no commitment. You only pay for what you use, wherever you are.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit-num">02</span>
+        <h3>One single network</h3>
+        <p>The same access in every city and resort covered. Work in Geneva in the morning, in Annecy in the afternoon.</p>
+      </div>
+      <div class="benefit reveal">
+        <span class="benefit-num">03</span>
+        <h3>Premium atmosphere</h3>
+        <p>Venues chosen for their quality of welcome. Fibre Wi-Fi, coffee, quiet and service all there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT / CTA ===================== -->
+<section class="section on-cream" id="contact-solutions">
+  <div class="container">
+    <div class="contact-cta reveal">
+      <div class="contact-cta-text">
+        <span class="eyebrow">Book or get a callback</span>
+        <h2>A question, a tailored need?</h2>
+        <p>Tell us what you're looking for — city, format, frequency — and our team will come back to you with the best addresses in the network.</p>
+        <ul class="contact-points">
+          <li>Reply within 24 business hours</li>
+          <li>Personalised advice based on your travels</li>
+          <li>Volume pricing for teams</li>
+        </ul>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xbdvjdvn" method="POST" data-ok="solOk">
+        <div class="field">
+          <label for="s-name">Full name</label>
+          <input id="s-name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="s-email">Work email</label>
+          <input id="s-email" name="email" type="email" required placeholder="you@company.com">
+        </div>
+        <div class="field two">
+          <div>
+            <label for="s-city">City you want</label>
+            <input id="s-city" name="city" type="text" placeholder="Geneva, Annecy…">
+          </div>
+          <div>
+            <label for="s-format">Format</label>
+            <select id="s-format" name="format">
+              <option>AltiusSpot — local spot</option>
+              <option>AltiusHub — office / room by the day</option>
+              <option>AltiusOffice — office by the year</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="s-msg">Your need</label>
+          <textarea id="s-msg" name="message" rows="3" placeholder="Frequency, number of people, dates…"></textarea>
+        </div>
+        <button class="btn btn-gold btn-lg" type="submit">Get a callback <span class="arrow">→</span></button>
+        <p id="solOk" class="form-ok" hidden>Thank you! Your request has been received — we'll get back to you very soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="mark" src="../assets/logo-mark.png" alt="">
+          <span class="word">Altius<b>Work</b></span>
+        </a>
+        <p class="footer-blurb">Where hospitality meets productivity. The network of flexible workspaces set inside quality venues.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="partenaires.html">Become a partner</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://www.altius-work.com">www.altius-work.com</a></li>
+          <li><a href="mailto:nicolas@altius-work.com">nicolas@altius-work.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AltiusWork. All rights reserved.</span>
+      <span>French-speaking Switzerland · Haute-Savoie</span>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="../assets/solutions.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="../assets/site.js"></script>
+<script src="../assets/map.js"></script>
+</body>
+</html>

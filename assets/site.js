@@ -30,13 +30,21 @@
 
   // Contact / candidature forms — AJAX submit to Formspree
   function initForms() {
+    var en = document.documentElement.lang === 'en';
+    var T = {
+      sending: en ? 'Sending…' : 'Envoi…',
+      errSend: en ? 'Something went wrong while sending. Please try again, or email us at nicolas@altius-work.com.'
+                  : "Une erreur est survenue lors de l'envoi. Réessayez, ou écrivez-nous à nicolas@altius-work.com.",
+      errNet:  en ? 'Connection failed. Please try again, or email us at nicolas@altius-work.com.'
+                  : 'Connexion impossible. Réessayez, ou écrivez-nous à nicolas@altius-work.com.'
+    };
     document.querySelectorAll('form.contact-form[action*="formspree"]').forEach(function (form) {
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         var okId = form.getAttribute('data-ok');
         var btn = form.querySelector('button[type="submit"]');
         var label = btn ? btn.innerHTML : '';
-        if (btn) { btn.disabled = true; btn.innerHTML = 'Envoi…'; }
+        if (btn) { btn.disabled = true; btn.innerHTML = T.sending; }
         fetch(form.action, {
           method: 'POST',
           body: new FormData(form),
@@ -46,10 +54,10 @@
             form.reset();
             if (okId) { var ok = document.getElementById(okId); if (ok) ok.hidden = false; }
           } else {
-            alert("Une erreur est survenue lors de l'envoi. Réessayez, ou écrivez-nous à nicolas@altius-work.com.");
+            alert(T.errSend);
           }
         }).catch(function () {
-          alert("Connexion impossible. Réessayez, ou écrivez-nous à nicolas@altius-work.com.");
+          alert(T.errNet);
         }).finally(function () {
           if (btn) { btn.disabled = false; btn.innerHTML = label; }
         });
