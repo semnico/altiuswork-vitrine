@@ -7,9 +7,9 @@
     </linearGradient>
   </defs>
 
-  <!-- Dual Peak A — sommet droit (plein, plus haut) -->
-  <path d="M40 6 L57 58 L46 58 L31 23 Z" fill="url(#alt-gold)"></path>
+  <!-- Dual Peak A — sommet droit (plein, plus haut), recentre -->
+  <path d="M38 7 L54 55 L44 55 L29 24 Z" fill="url(#alt-gold)"></path>
 
   <!-- sommet gauche (contour, plus bas) -->
-  <path d="M26 19 L11 58 L19 58 L32 30 Z" fill="none" stroke="url(#alt-gold)" stroke-width="3" stroke-linejoin="round"></path>
+  <path d="M26 20 L12 55 L21 55 L33 31 Z" fill="none" stroke="url(#alt-gold)" stroke-width="3.2" stroke-linejoin="round"></path>
 </svg>
