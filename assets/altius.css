@@ -234,6 +234,7 @@ p{margin:0;text-wrap:pretty;}
 }
 .center .section-head p.lead{margin-inline:auto;}
 .on-dark .section-head p.lead{color:var(--cream-soft);}
+.section-head .btn-spaced{margin-top:2.2rem;}
 
 .eyebrow.gold-dot{}
 
