@@ -15,7 +15,7 @@ const AW_T = {
 
 const AW_PLACES = [
   { id:'beau-rivage', kind:'hotel', name:'Hôtel Beau-Rivage', city:'Genève',
-    types:['hub','office'], coords:[46.2074,6.1559], priceFrom:39,
+    types:['daily','meeting','office'], coords:[46.2074,6.1559], priceFrom:39,
     equip:{ fr:['Wi-Fi fibre','Café illimité','Écran 4K','Standing 5★'], en:['Fibre Wi-Fi','Unlimited coffee','4K screen','5★ standing'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
     desc:{ fr:"Palace au bord du lac. Chambres lumineuses converties en day-offices et deux salles de réunion vue Léman.",
@@ -23,7 +23,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — suite vue lac aménagée en bureau', en:'PHOTO — lake-view suite set up as an office' } },
 
   { id:'trois-couronnes', kind:'hotel', name:'Hôtel des Trois Couronnes', city:'Vevey',
-    types:['hub','office'], coords:[46.4615,6.8430], priceFrom:35,
+    types:['daily','meeting','office'], coords:[46.4615,6.8430], priceFrom:35,
     equip:{ fr:['Wi-Fi fibre','Salle de réunion 12 pers.','Terrasse','Restauration'], en:['Fibre Wi-Fi','12-seat meeting room','Terrace','Catering'] },
     dispo:{ fr:'Lun–Sam · 8h–19h', en:'Mon–Sat · 8am–7pm' },
     desc:{ fr:"Adresse historique face au lac. Bureaux privatifs et salon de réception pour vos rendez-vous d'affaires.",
@@ -31,7 +31,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — salon de réunion classique', en:'PHOTO — classic meeting lounge' } },
 
   { id:'mirador', kind:'hotel', name:'Le Mirador Resort', city:'Montreux',
-    types:['hub','office'], coords:[46.4869,6.8186], priceFrom:42,
+    types:['daily','office'], coords:[46.4869,6.8186], priceFrom:42,
     equip:{ fr:['Wi-Fi fibre','Vue panoramique','Spa','Parking'], en:['Fibre Wi-Fi','Panoramic view','Spa','Parking'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
     desc:{ fr:"Resort perché sur les hauteurs. Cadre calme et panoramique, idéal pour les journées de travail au vert.",
@@ -39,7 +39,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — bureau panoramique hauteurs', en:'PHOTO — panoramic office on the heights' } },
 
   { id:'paix-lausanne', kind:'hotel', name:'Hôtel de la Paix', city:'Lausanne',
-    types:['hub'], coords:[46.5188,6.6300], priceFrom:29,
+    types:['daily'], coords:[46.5188,6.6300], priceFrom:29,
     equip:{ fr:['Wi-Fi fibre','Café illimité','Central','Lobby work-friendly'], en:['Fibre Wi-Fi','Unlimited coffee','Central','Work-friendly lobby'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
     desc:{ fr:"En plein centre de Lausanne. Day-offices fonctionnels à deux pas de la gare et des transports.",
@@ -47,7 +47,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — day-office centre-ville', en:'PHOTO — city-centre day-office' } },
 
   { id:'royal-evian', kind:'hotel', name:'Hôtel Royal', city:'Évian-les-Bains',
-    types:['hub','office'], coords:[46.4017,6.5760], priceFrom:38,
+    types:['meeting','office'], coords:[46.4017,6.5760], priceFrom:38,
     equip:{ fr:['Wi-Fi fibre','Parc privé','Salles modulables','Restauration'], en:['Fibre Wi-Fi','Private grounds','Modular rooms','Catering'] },
     dispo:{ fr:'Lun–Sam · 8h–19h', en:'Mon–Sat · 8am–7pm' },
     desc:{ fr:"Domaine d'exception côté français. Grandes salles modulables pour séminaires et comités de direction.",
@@ -55,7 +55,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — salle de séminaire domaine', en:'PHOTO — estate seminar room' } },
 
   { id:'mont-blanc-cham', kind:'hotel', name:'Hôtel Mont-Blanc', city:'Chamonix',
-    types:['hub'], coords:[45.9237,6.8694], priceFrom:32,
+    types:['daily'], coords:[45.9237,6.8694], priceFrom:32,
     equip:{ fr:['Wi-Fi fibre','Vue massif','Cheminée lounge','Café'], en:['Fibre Wi-Fi','Mountain view','Lounge fireplace','Coffee'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
     desc:{ fr:"Au pied du Mont-Blanc. Travaillez face aux sommets entre deux réunions ou journées à la montagne.",
@@ -63,7 +63,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — lounge vue Mont-Blanc', en:'PHOTO — Mont Blanc-view lounge' } },
 
   { id:'imperial-annecy', kind:'hotel', name:'Impérial Palace', city:'Annecy',
-    types:['hub','office'], coords:[45.9065,6.1457], priceFrom:36,
+    types:['daily','meeting','office'], coords:[45.9065,6.1457], priceFrom:36,
     equip:{ fr:['Wi-Fi fibre','Bord du lac','Salles de conférence','Parking'], en:['Fibre Wi-Fi','Lakeside','Conference rooms','Parking'] },
     dispo:{ fr:'Lun–Sam · 8h–19h', en:'Mon–Sat · 8am–7pm' },
     desc:{ fr:"Palace au bord du lac d'Annecy. Bureaux et salles de conférence dans un écrin Belle Époque.",
@@ -71,7 +71,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — salle conférence bord du lac', en:'PHOTO — lakeside conference room' } },
 
   { id:'nh-fribourg', kind:'hotel', name:'Hôtel NH Fribourg', city:'Fribourg',
-    types:['hub'], coords:[46.8020,7.1620], priceFrom:27,
+    types:['daily'], coords:[46.8020,7.1620], priceFrom:27,
     equip:{ fr:['Wi-Fi fibre','Café illimité','Proche autoroute','Parking'], en:['Fibre Wi-Fi','Unlimited coffee','Near motorway','Parking'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
     desc:{ fr:"Accès autoroute immédiat. Idéal pour les commerciaux en tournée et les étapes de travail rapides.",
@@ -111,7 +111,7 @@ const AW_PLACES = [
     photo:{ fr:'PHOTO — rooftop vieille ville', en:'PHOTO — old-town rooftop' } },
 ];
 
-const AW_TYPE_LABEL = { spot:'AltiusSpot', hub:'AltiusHub', office:'AltiusOffice' };
+const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meeting:'Meeting Room' };
 
 (function () {
   if (typeof L === 'undefined') return;
