@@ -1,6 +1,6 @@
 // ============================================================
 // AltiusWork — Solutions page · interactive locations map
-// Leaflet + CartoDB Positron · demo data (Alpes françaises, Suisse romande en second)
+// Leaflet + CartoDB Positron · Alpes françaises (Suisse en second). Sites Restoleil (Base Camp Lodge) = partenaire ; autres lieux = exemples illustratifs.
 // Bilingue : les textes suivent la langue de la page (<html lang>).
 // ============================================================
 
@@ -30,21 +30,45 @@ const AW_PLACES = [
            en:"A character estate at the gates of Chambéry. Private offices and lounges for your business meetings." },
     photo:{ fr:'PHOTO — salon de réunion demeure', en:'PHOTO — estate meeting lounge' } },
 
-  { id:'grand-albertville', kind:'hotel', name:'Grand Hôtel', city:'Albertville',
-    types:['daily','meeting'], coords:[45.6759,6.3925], priceFrom:38,
-    equip:{ fr:['Wi-Fi fibre','Axe Tarentaise','Salle de réunion','Parking'], en:['Fibre Wi-Fi','Tarentaise route','Meeting room','Parking'] },
-    dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
-    desc:{ fr:"Sur l'axe de la Tarentaise. Day-offices et salle de réunion, idéal pour les équipes en déplacement.",
-           en:"On the Tarentaise route. Day-offices and a meeting room, ideal for teams on the move." },
-    photo:{ fr:'PHOTO — day-office moderne', en:'PHOTO — modern day-office' } },
+  { id:'bcl-albertville', kind:'hotel', name:'Base Camp Lodge Albertville', city:'Albertville',
+    types:['daily','meeting','office'], coords:[45.6759,6.3925], priceFrom:38,
+    equip:{ fr:['Wi-Fi fibre','90 chambres','Salles de séminaire','Spa'], en:['Fibre Wi-Fi','90 rooms','Seminar rooms','Spa'] },
+    dispo:{ fr:'Lun–Sam · 8h–19h', en:'Mon–Sat · 8am–7pm' },
+    desc:{ fr:"Groupe Restoleil, partenaire. 90 chambres sur la RN90, salles de séminaire et spa. Site pilote du corridor Tarentaise.",
+           en:"Restoleil group, partner. 90 rooms on the RN90, seminar rooms and spa. Pilot site of the Tarentaise corridor." },
+    photo:{ fr:'PHOTO — Base Camp Lodge Albertville', en:'PHOTO — Base Camp Lodge Albertville' } },
 
-  { id:'alpins-bourg', kind:'hotel', name:'Les Alpins', city:'Bourg-Saint-Maurice',
-    types:['daily','office'], coords:[45.6180,6.7690], priceFrom:38,
-    equip:{ fr:['Wi-Fi fibre','Porte des stations','Bureaux à l\'usage','Café'], en:['Fibre Wi-Fi','Gateway to resorts','On-demand offices','Coffee'] },
+  { id:'bcl-bourg', kind:'hotel', name:'Base Camp Lodge Bourg-Saint-Maurice', city:'Bourg-Saint-Maurice',
+    types:['daily','office'], coords:[45.6100,6.7690], priceFrom:38,
+    equip:{ fr:['Wi-Fi fibre','Quartier des Alpins','Porte des stations','Café'], en:['Fibre Wi-Fi','Quartier des Alpins','Gateway to resorts','Coffee'] },
     dispo:{ fr:'Lun–Ven · 8h–18h', en:'Mon–Fri · 8am–6pm' },
-    desc:{ fr:"Porte des stations de la Tarentaise. Bureaux à l'usage pour les pros en tournée dans les vallées.",
-           en:"Gateway to the Tarentaise resorts. On-demand offices for pros touring the valleys." },
-    photo:{ fr:'PHOTO — bureau à l\'usage montagne', en:'PHOTO — mountain on-demand office' } },
+    desc:{ fr:"Groupe Restoleil, partenaire. Lodge lifestyle au Quartier des Alpins, porte des stations de la Tarentaise. 2e site du corridor pilote.",
+           en:"Restoleil group, partner. Lifestyle lodge in the Quartier des Alpins, gateway to the Tarentaise resorts. Second site of the pilot corridor." },
+    photo:{ fr:'PHOTO — Base Camp Lodge Bourg-Saint-Maurice', en:'PHOTO — Base Camp Lodge Bourg-Saint-Maurice' } },
+
+  { id:'bcl-2alpes', kind:'hotel', name:'Base Camp Lodge Les Deux-Alpes', city:'Les Deux-Alpes',
+    types:['daily'], coords:[45.0106,6.1244], priceFrom:40,
+    equip:{ fr:['Wi-Fi fibre','Station d\'altitude','Lounge','Café'], en:['Fibre Wi-Fi','High-altitude resort','Lounge','Coffee'] },
+    dispo:{ fr:'Saison · 8h–18h', en:'Season · 8am–6pm' },
+    desc:{ fr:"Groupe Restoleil, partenaire. Lodge en station d'altitude (Isère), pour les saisonniers et les pros en workation.",
+           en:"Restoleil group, partner. High-altitude resort lodge (Isère), for seasonal workers and workation pros." },
+    photo:{ fr:'PHOTO — Base Camp Lodge Les Deux-Alpes', en:'PHOTO — Base Camp Lodge Les Deux-Alpes' } },
+
+  { id:'bcl-feclaz', kind:'hotel', name:'Base Camp Lodge La Féclaz', city:'La Féclaz',
+    types:['daily'], coords:[45.6360,5.9870], priceFrom:38,
+    equip:{ fr:['Wi-Fi fibre','Massif des Bauges','Lounge','Café'], en:['Fibre Wi-Fi','Bauges massif','Lounge','Coffee'] },
+    dispo:{ fr:'Saison · 8h–18h', en:'Season · 8am–6pm' },
+    desc:{ fr:"Groupe Restoleil, partenaire. Lodge du massif des Bauges (ouverture 2026), à deux pas de Chambéry.",
+           en:"Restoleil group, partner. Bauges massif lodge (opening 2026), a short drive from Chambéry." },
+    photo:{ fr:'PHOTO — Base Camp Lodge La Féclaz', en:'PHOTO — Base Camp Lodge La Féclaz' } },
+
+  { id:'arpette-arc1800', kind:'spot', name:'L\'Arpette', city:'Arc 1800',
+    types:['spot'], coords:[45.5720,6.8270], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Restaurant d\'altitude','Terrasse','Café'], en:['Wi-Fi','Mountain restaurant','Terrace','Coffee'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant d'altitude à Arc 1800, coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. High-altitude restaurant at Arc 1800, a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant Arc 1800', en:'PHOTO — Arc 1800 restaurant' } },
 
   { id:'presquile-lyon', kind:'hotel', name:'Hôtel de la Presqu\'île', city:'Lyon',
     types:['daily','meeting','office'], coords:[45.7640,4.8330], priceFrom:44,
