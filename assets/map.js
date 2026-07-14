@@ -247,6 +247,56 @@ const AW_PLACES = [
     desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant de La Mole, coin travail sur les heures creuses.",
            en:"AltiusSpot — Restoleil group, partner. A La Mole restaurant, a work corner during off-peak hours." },
     photo:{ fr:'PHOTO — restaurant terrasse', en:'PHOTO — terrace restaurant' } },
+
+  // --- Groupe Restoleil : Provence intérieure / vallée du Rhône (partenaire) ---
+  { id:'rl-sagittaire-vinsobres', kind:'spot', name:'Le Sagittaire', city:'Vinsobres', types:['spot'], coords:[44.3370,5.0570], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Cadre provençal'], en:['Wi-Fi','Coffee','Terrace','Provençal setting'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse de Vinsobres (Drôme provençale), au calme pour travailler.",
+           en:"AltiusSpot — Restoleil group, partner. A Vinsobres venue (Drôme provençale), quiet for working." },
+    photo:{ fr:'PHOTO — terrasse provençale', en:'PHOTO — Provençal terrace' } },
+
+  { id:'rl-carpediem-vaison', kind:'spot', name:'Le Carpe Diem', city:'Vaison-la-Romaine', types:['spot'], coords:[44.2410,5.0740], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Centre historique'], en:['Wi-Fi','Coffee','Terrace','Historic centre'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table de Vaison-la-Romaine, coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. A Vaison-la-Romaine table, a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant Vaison', en:'PHOTO — Vaison restaurant' } },
+
+  { id:'rl-cabane-larnas', kind:'spot', name:'La Cabane', city:'Larnas', types:['spot'], coords:[44.4000,4.5800], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Nature','Terrasse'], en:['Wi-Fi','Coffee','Nature','Terrace'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse nature à Larnas (Ardèche), pour travailler au vert.",
+           en:"AltiusSpot — Restoleil group, partner. A nature venue in Larnas (Ardèche), to work in the green." },
+    photo:{ fr:'PHOTO — terrasse nature', en:'PHOTO — nature terrace' } },
+
+  { id:'rl-cascade-larnas', kind:'spot', name:'La Cascade', city:'Larnas', types:['spot'], coords:[44.4015,4.5815], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Heures creuses'], en:['Wi-Fi','Coffee','Terrace','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table de Larnas (Ardèche), coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. A Larnas table (Ardèche), a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant Ardèche', en:'PHOTO — Ardèche restaurant' } },
+
+  { id:'rl-escale-larnas', kind:'spot', name:'L\'Escale', city:'Larnas', types:['spot'], coords:[44.3985,4.5785], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Cadre calme'], en:['Wi-Fi','Coffee','Terrace','Quiet setting'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Étape à Larnas (Ardèche), pour un point de travail au calme.",
+           en:"AltiusSpot — Restoleil group, partner. A stop in Larnas (Ardèche), for a quiet work break." },
+    photo:{ fr:'PHOTO — étape Ardèche', en:'PHOTO — Ardèche stop' } },
+
+  { id:'rl-boissy-rouret', kind:'spot', name:'Le Boissy', city:'Le Rouret', types:['spot'], coords:[44.3560,4.3170], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Domaine','Terrasse'], en:['Wi-Fi','Coffee','Estate','Terrace'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant du Domaine le Rouret (Ardèche), coin travail en journée.",
+           en:"AltiusSpot — Restoleil group, partner. A restaurant at Domaine le Rouret (Ardèche), a work corner during the day." },
+    photo:{ fr:'PHOTO — restaurant domaine', en:'PHOTO — estate restaurant' } },
+
+  { id:'rl-castagnou-rouret', kind:'spot', name:'Le Castagnou', city:'Le Rouret', types:['spot'], coords:[44.3550,4.3185], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Domaine','Nature'], en:['Wi-Fi','Coffee','Estate','Nature'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table du Domaine le Rouret (Ardèche), pour travailler au vert.",
+           en:"AltiusSpot — Restoleil group, partner. A table at Domaine le Rouret (Ardèche), to work in the green." },
+    photo:{ fr:'PHOTO — table domaine nature', en:'PHOTO — estate nature table' } },
 ];
 
 const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meeting:'Meeting Room' };
