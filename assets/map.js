@@ -133,6 +133,120 @@ const AW_PLACES = [
     desc:{ fr:"AltiusSpot — Suisse romande, en second. Brasserie de la rive gauche pour travailler en solo, café à la main.",
            en:"AltiusSpot — French-speaking Switzerland, secondary market. A left-bank brasserie to work solo, coffee in hand." },
     photo:{ fr:'PHOTO — lounge brasserie', en:'PHOTO — brasserie lounge' } },
+
+  // --- Groupe Restoleil : restaurants & bars (partenaire) - montagne (Tarentaise / 3 Vallées) ---
+  { id:'rl-grange-vt', kind:'spot', name:'La Grange', city:'Val Thorens', types:['spot'], coords:[45.2985,6.5790], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Heures creuses'], en:['Wi-Fi','Coffee','Work corner','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant à Val Thorens, coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. Restaurant in Val Thorens, a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant Val Thorens', en:'PHOTO — Val Thorens restaurant' } },
+
+  { id:'rl-ptiteferme-vt', kind:'spot', name:'La P\'tite Ferme', city:'Val Thorens', types:['spot'], coords:[45.2970,6.5815], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Ambiance chalet'], en:['Wi-Fi','Coffee','Work corner','Chalet vibe'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table de montagne à Val Thorens, pour bosser entre deux points.",
+           en:"AltiusSpot — Restoleil group, partner. A mountain table in Val Thorens, to work between stops." },
+    photo:{ fr:'PHOTO — table de montagne', en:'PHOTO — mountain table' } },
+
+  { id:'rl-augustine-vt', kind:'spot', name:'Chez Augustine', city:'Val Thorens', types:['spot'], coords:[45.2995,6.5808], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Heures creuses'], en:['Wi-Fi','Coffee','Terrace','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse conviviale à Val Thorens, coin travail en journée.",
+           en:"AltiusSpot — Restoleil group, partner. A friendly spot in Val Thorens, a work corner during the day." },
+    photo:{ fr:'PHOTO — restaurant convivial', en:'PHOTO — friendly restaurant' } },
+
+  { id:'rl-jasper-vt', kind:'spot', name:'Jasper', city:'Val Thorens', types:['spot'], coords:[45.2962,6.5788], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Design'], en:['Wi-Fi','Coffee','Work corner','Design'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Lieu design à Val Thorens pour travailler au calme en journée.",
+           en:"AltiusSpot — Restoleil group, partner. A design venue in Val Thorens to work quietly during the day." },
+    photo:{ fr:'PHOTO — lieu design station', en:'PHOTO — design resort venue' } },
+
+  { id:'rl-chaudron-vt', kind:'spot', name:'Le Chaudron Magique', city:'Val Thorens', types:['spot'], coords:[45.2978,6.5825], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Heures creuses'], en:['Wi-Fi','Coffee','Work corner','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table de Val Thorens ouverte au travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. A Val Thorens table open to work during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant station', en:'PHOTO — resort restaurant' } },
+
+  { id:'rl-columbus-vt', kind:'spot', name:'Columbus Café & Co', city:'Val Thorens', types:['spot'], coords:[45.3000,6.5795], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café de spécialité','Prises','Ambiance café'], en:['Wi-Fi','Specialty coffee','Sockets','Coffee-shop vibe'] },
+    dispo:{ fr:'Saison · 8h–17h', en:'Season · 8am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Coffee shop à Val Thorens, idéal pour les emails et les appels.",
+           en:"AltiusSpot — Restoleil group, partner. A coffee shop in Val Thorens, ideal for emails and calls." },
+    photo:{ fr:'PHOTO — coffee shop station', en:'PHOTO — resort coffee shop' } },
+
+  { id:'rl-balcons-bp', kind:'spot', name:'L\'Auberge des Balcons', city:'Belle Plagne', types:['spot'], coords:[45.5078,6.7272], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Terrasse','Coin travail'], en:['Wi-Fi','Coffee','Terrace','Work corner'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Auberge à Belle Plagne, coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. An inn in Belle Plagne, a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — auberge de montagne', en:'PHOTO — mountain inn' } },
+
+  { id:'rl-chalet-bp', kind:'spot', name:'Le Chalet', city:'Belle Plagne', types:['spot'], coords:[45.5062,6.7290], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Brasserie','Café','Heures creuses'], en:['Wi-Fi','Brasserie','Coffee','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Brasserie de Belle Plagne, pour travailler café à la main.",
+           en:"AltiusSpot — Restoleil group, partner. A Belle Plagne brasserie, to work coffee in hand." },
+    photo:{ fr:'PHOTO — brasserie de station', en:'PHOTO — resort brasserie' } },
+
+  { id:'rl-k2-bp', kind:'spot', name:'Le K2', city:'Belle Plagne', types:['spot'], coords:[45.5085,6.7295], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Terrasse'], en:['Wi-Fi','Coffee','Work corner','Terrace'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse de Belle Plagne ouverte au travail en journée.",
+           en:"AltiusSpot — Restoleil group, partner. A Belle Plagne venue open to work during the day." },
+    photo:{ fr:'PHOTO — restaurant station', en:'PHOTO — resort restaurant' } },
+
+  { id:'rl-alberto-tignes', kind:'spot', name:'Alberto', city:'Tignes', types:['spot'], coords:[45.4685,6.9060], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Coin travail','Heures creuses'], en:['Wi-Fi','Coffee','Work corner','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Table de Tignes, coin travail pour les pros en tournée.",
+           en:"AltiusSpot — Restoleil group, partner. A Tignes table, a work corner for pros on the road." },
+    photo:{ fr:'PHOTO — restaurant Tignes', en:'PHOTO — Tignes restaurant' } },
+
+  { id:'rl-bergerie-stefoy', kind:'spot', name:'La Bergerie', city:'Sainte-Foy-Tarentaise', types:['spot'], coords:[45.5880,6.8950], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Café','Cadre montagne','Heures creuses'], en:['Wi-Fi','Coffee','Mountain setting','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse de Sainte-Foy-Tarentaise, au calme pour travailler.",
+           en:"AltiusSpot — Restoleil group, partner. A Sainte-Foy-Tarentaise venue, quiet for working." },
+    photo:{ fr:'PHOTO — bergerie de montagne', en:'PHOTO — mountain bergerie' } },
+
+  { id:'rl-vogagoga-arc1800', kind:'spot', name:'Vôga Goga', city:'Arc 1800', types:['spot'], coords:[45.5710,6.8285], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Bar','Prises','Ambiance lounge'], en:['Wi-Fi','Bar','Sockets','Lounge vibe'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Bar-lounge d'Arc 1800, pour un point de travail rapide en journée.",
+           en:"AltiusSpot — Restoleil group, partner. An Arc 1800 bar-lounge, for a quick work stop during the day." },
+    photo:{ fr:'PHOTO — bar lounge station', en:'PHOTO — resort bar-lounge' } },
+
+  // --- Groupe Restoleil : côte méditerranéenne (partenaire) ---
+  { id:'rl-boucanet-graudroi', kind:'spot', name:'Le Boucanet', city:'Le Grau-du-Roi', types:['spot'], coords:[43.5480,4.1280], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Bord de mer','Terrasse','Café'], en:['Wi-Fi','Seaside','Terrace','Coffee'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant de bord de mer au Grau-du-Roi, coin travail hors service.",
+           en:"AltiusSpot — Restoleil group, partner. A seaside restaurant in Le Grau-du-Roi, a work corner off-service." },
+    photo:{ fr:'PHOTO — restaurant bord de mer', en:'PHOTO — seaside restaurant' } },
+
+  { id:'rl-naiades-portgrimaud', kind:'spot', name:'Les Naïades', city:'Port Grimaud', types:['spot'], coords:[43.2735,6.5795], priceFrom:14,
+    equip:{ fr:['Wi-Fi','Terrasse','Vue port','Café'], en:['Wi-Fi','Terrace','Harbour view','Coffee'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Adresse de Port Grimaud, terrasse au calme pour travailler.",
+           en:"AltiusSpot — Restoleil group, partner. A Port Grimaud venue, a quiet terrace to work." },
+    photo:{ fr:'PHOTO — terrasse port', en:'PHOTO — harbour terrace' } },
+
+  { id:'rl-pacha-lamole', kind:'spot', name:'Pacha Café', city:'La Mole', types:['spot'], coords:[43.2055,6.4740], priceFrom:12,
+    equip:{ fr:['Wi-Fi','Café','Prises','Terrasse'], en:['Wi-Fi','Coffee','Sockets','Terrace'] },
+    dispo:{ fr:'Saison · 8h–17h', en:'Season · 8am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Café de La Mole (golfe de Saint-Tropez), idéal emails et appels.",
+           en:"AltiusSpot — Restoleil group, partner. A café in La Mole (Gulf of Saint-Tropez), ideal for emails and calls." },
+    photo:{ fr:'PHOTO — café terrasse', en:'PHOTO — café terrace' } },
+
+  { id:'rl-aquablue-lamole', kind:'spot', name:'AquaBlue', city:'La Mole', types:['spot'], coords:[43.2045,6.4760], priceFrom:13,
+    equip:{ fr:['Wi-Fi','Terrasse','Café','Heures creuses'], en:['Wi-Fi','Terrace','Coffee','Off-peak'] },
+    dispo:{ fr:'Saison · 9h–17h', en:'Season · 9am–5pm' },
+    desc:{ fr:"AltiusSpot — Groupe Restoleil, partenaire. Restaurant de La Mole, coin travail sur les heures creuses.",
+           en:"AltiusSpot — Restoleil group, partner. A La Mole restaurant, a work corner during off-peak hours." },
+    photo:{ fr:'PHOTO — restaurant terrasse', en:'PHOTO — terrace restaurant' } },
 ];
 
 const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meeting:'Meeting Room' };
@@ -143,7 +257,7 @@ const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meet
   const state = { type:'all', city:'all', activeId:null };
 
   const map = L.map('map', { scrollWheelZoom:false, zoomControl:true })
-    .setView([45.85, 5.95], 8);
+    .setView([44.6, 5.5], 7);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution:'© OpenStreetMap · © CARTO',
@@ -163,6 +277,9 @@ const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meet
     m.on('click', function () { selectPlace(p.id, true); });
     markers[p.id] = m;
   });
+
+  // cadrage automatique sur l'ensemble des lieux (Alpes -> Méditerranée)
+  try { map.fitBounds(L.latLngBounds(AW_PLACES.map(function (p) { return p.coords; })), { padding:[30,30], maxZoom:9 }); } catch (e) {}
 
   // city filter options
   const cities = Array.from(new Set(AW_PLACES.map(p => p.city))).sort();
