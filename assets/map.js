@@ -416,9 +416,8 @@ const AW_TYPE_LABEL = { spot:'Spot', daily:'Daily Office', office:'Office', meet
   const map = L.map('map', { scrollWheelZoom:false, zoomControl:true })
     .setView([44.6, 5.5], 7);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution:'© OpenStreetMap · © CARTO',
-    subdomains:'abcd', maxZoom:19
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution:'Tiles © Esri', maxZoom:16
   }).addTo(map);
 
   // build markers
